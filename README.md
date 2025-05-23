@@ -1,6 +1,6 @@
-# mailu_email_system
-
 Mailu Email System on Ubuntu 22.04 (Contabo VPS or a server that does not block email ports, Docker)
+
+
 This guide walks you through setting up a secure, production-ready Mailu email server on a Contabo VPS running Ubuntu 22.04, using Docker and Docker Compose.
 No control panel required.
 Includes DNS, SSL, and backup automation.
