@@ -14,13 +14,6 @@ git clone https://github.com/kadavilrahul/setup_email_system.git
 
 # Navigate to the directory
 cd setup_email_system
-
-# Choose your preferred setup method
-# Option 1: Traditional approach with iRedMail
-./setup-iredmail.sh
-
-# Option 2: Modern containerized approach with Mailu
-./setup-mailu.sh
 ```
 
 ## 📋 Table of Contents
@@ -83,13 +76,6 @@ This repository provides two comprehensive email server setup solutions:
 
 ### Option 1: iRedMail Setup (Traditional)
 
-```bash
-# Download and run the setup script
-wget https://raw.githubusercontent.com/kadavilrahul/setup_email_system/main/scripts/install-iredmail.sh
-chmod +x install-iredmail.sh
-sudo ./install-iredmail.sh
-```
-
 **Features:**
 - Complete LAMP stack installation
 - Postfix + Dovecot configuration
@@ -100,13 +86,6 @@ sudo ./install-iredmail.sh
 - Roundcube webmail
 
 ### Option 2: Mailu Setup (Docker-based)
-
-```bash
-# Download and run the setup script
-wget https://raw.githubusercontent.com/kadavilrahul/setup_email_system/main/scripts/install-mailu.sh
-chmod +x install-mailu.sh
-sudo ./install-mailu.sh
-```
 
 **Features:**
 - Containerized email stack
@@ -127,9 +106,6 @@ sudo ./install-mailu.sh
    ```
 
 2. **Run the interactive installer:**
-   ```bash
-   sudo ./install.sh
-   ```
 
 3. **Follow the prompts:**
    - Choose your preferred email system (iRedMail or Mailu)
@@ -137,21 +113,6 @@ sudo ./install-mailu.sh
    - Set admin credentials
    - Configure SSL settings
 
-### Manual Installation
-
-For advanced users who want full control over the installation process:
-
-1. **iRedMail Manual Setup:**
-   ```bash
-   # Follow the detailed guide
-   cat guides/iredmail-complete-guide.md
-   ```
-
-2. **Mailu Manual Setup:**
-   ```bash
-   # Follow the detailed guide
-   cat guides/mailu-setup-guide.md
-   ```
 
 ## 📚 Detailed Guides
 
@@ -215,21 +176,6 @@ _dmarc.yourdomain.com.   IN  TXT     "v=DMARC1; p=quarantine; rua=mailto:dmarc@y
 - ✅ **Antivirus Scanning** - ClamAV integration
 - ✅ **DKIM/SPF/DMARC** - Email authentication
 
-### Maintenance Scripts
-
-```bash
-# Update and maintain your email server
-./scripts/update-server.sh
-
-# Backup email data
-./scripts/backup-email.sh
-
-# Monitor server health
-./scripts/health-check.sh
-
-# Clean up old logs and data
-./scripts/cleanup.sh
-```
 
 ## 🔧 Configuration Files
 
@@ -373,19 +319,6 @@ Authentication: Normal password
 # - Other IMAP servers
 ```
 
-### Backup Strategies
-
-```bash
-# Daily automated backups
-./scripts/setup-daily-backup.sh
-
-# Backup to cloud storage
-./scripts/backup-to-s3.sh
-./scripts/backup-to-google-drive.sh
-
-# Restore from backup
-./scripts/restore-backup.sh backup-file.tar.gz
-```
 
 ## 🤝 Contributing
 
@@ -400,19 +333,6 @@ We welcome contributions! Here's how you can help:
 4. **Test thoroughly**
 5. **Submit a pull request**
 
-### Development Setup
-
-```bash
-# Clone for development
-git clone https://github.com/kadavilrahul/setup_email_system.git
-cd setup_email_system
-
-# Install development dependencies
-./scripts/setup-dev.sh
-
-# Run tests
-./scripts/run-tests.sh
-```
 
 ## 📞 Support
 
